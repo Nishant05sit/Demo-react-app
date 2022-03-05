@@ -1,4 +1,5 @@
 import {useState} from "react";
+import styles from "./Product.module.css";
 
 
 const Product =(props) =>{
@@ -17,12 +18,12 @@ const Product =(props) =>{
 
     return(
         
-        <div className ="Item">
-            <span className="ProductList">{name}</span>
-            <span className="ProductDescription">{desc}</span>
-            <span className="quantity">{quantity}</span>
-            <span className="Price">{price}</span>
-            <div className="stepper">
+        <div className ={styles.Item}>
+            <span className={styles.ProductList}>{name}</span>
+            <span className={styles.ProductDescription}>{desc}</span>
+            <span className={styles.quantity}>{quantity}</span>
+            <span className={styles.Price}>{price}</span>
+            <div className={styles.stepper}>
                 <button  disabled={count===0} onClick={HandleClick1}>-</button>
                 <span>{count}</span>
                 <button onClick={HandleClick}>+</button>
