@@ -1,0 +1,12 @@
+.ProductListContainer{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+#Item1{
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    padding : 10px;
+}
