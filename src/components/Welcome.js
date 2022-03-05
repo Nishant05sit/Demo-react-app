@@ -7,14 +7,13 @@ function Welcome(props) {
 
     const {ProductListData} = props;  // destructuring
 
+    let element = ProductListData.map(product =>{
+        return <Product  name={product.name}  desc={product.desc}  quantity={product.quantity}   price={product.price} />
+      });
+
     return (
         <div className={style.ProductListContainer}> 
-
-            {ProductListData.map(product =>{
-                  return <Product  name={product.name}  desc={product.desc}  quantity={product.quantity}   price={product.price} />
-                })
-            }
-
+          {element}
         </div>
 
                 
