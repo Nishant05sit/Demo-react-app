@@ -4,9 +4,24 @@
     justify-content: space-evenly;
    
 }
-#Item1{
+.Item{
     background-color: chocolate;
     display: flex;
     flex-direction: column;
     padding : 10px;
+    text-align: center;
+}
+.stepper{
+    margin: 10px 10px;
+    display:flex;
+    justify-content: space-around;
+}
+.ProductDescription{
+    font-size: small;
+}
+.quantity{
+    font-size: small;
+}
+.Price{
+    font-size: medium;
 }

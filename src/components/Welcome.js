@@ -1,63 +1,21 @@
 import React from "react";
-import {useState} from "react";
+
 import "./Welcome.css";
+import Product from "./Product";
 
 function Welcome(props) {
 
     const {ProductListData} = props;  // destructuring
 
-    const [count, setCount] = useState(0);
-
-    const HandleClick=()=>{
-       setCount(count+1);
-    }
-
-    const HandleClick1=()=>{
-        setCount(count-1);
-     }
     return (
-        <div className="ProductListContainer">
-            <div id ="Item1">
-                <span className="ProductList">{ProductListData[0].name}</span>
-                <span className="ProductDescription">{ProductListData[0].desc}</span>
-                <span className="quantity">{ProductListData[0].quantity}</span>
-                <span className="Price">{ProductListData[0].price}</span>
-                <div>
-                    <button  disabled={count===0} onClick={HandleClick1}>-</button>
-                    <span>{count}</span>
-                    <button onClick={HandleClick}>+</button>
-                </div>
-
-            </div>
-
-            <div id ="Item1">
-                <span className="ProductList">{ProductListData[1].name}</span>
-                <span className="ProductDescription">{ProductListData[1].desc}</span>
-                <span className="quantity">{ProductListData[1].quantity}</span>
-                <span className="Price">{ProductListData[1].price}</span>
-                <div>
-                    <button  disabled={count===0} onClick={HandleClick1}>-</button>
-                    <span>{count}</span>
-                    <button onClick={HandleClick}>+</button>
-                </div>
-
-            </div>
-
-            <div id ="Item1">
-                <span className="ProductList">{ProductListData[2].name}</span>
-                <span className="ProductDescription">{ProductListData[2].desc}</span>
-                <span className="quantity">{ProductListData[2].quantity}</span>
-                <span className="Price">{ProductListData[2].price}</span>
-                <div>
-                    <button  disabled={count===0} onClick={HandleClick1}>-</button>
-                    <span>{count}</span>
-                    <button onClick={HandleClick}>+</button>
-                </div>
-
-            </div>
-                
+        <div className="ProductListContainer"> 
+            <Product name={ProductListData[0].name}  desc={ProductListData[0].desc}  quantity={ProductListData[0].quantity}   price={ProductListData[0].price} />
+            <Product name={ProductListData[1].name}  desc={ProductListData[1].desc}  quantity={ProductListData[1].quantity}   price={ProductListData[1].price} />
+            <Product name={ProductListData[2].name}  desc={ProductListData[2].desc}  quantity={ProductListData[2].quantity}   price={ProductListData[2].price} />
         </div>
-    );
+
+                
+    )
 }
 
 

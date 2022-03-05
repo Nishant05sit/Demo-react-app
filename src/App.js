@@ -6,7 +6,7 @@ import Welcome from "./components/Welcome";
 const ProductListData =[
   {
     id: 1,
-    name: 'Apple',
+    name: 'APPLE',
     desc: 'Kashmiri',
     quantity :'1 kg',
     price : 'Rs 20'
@@ -14,7 +14,7 @@ const ProductListData =[
   },
   {
     id: 2,
-    name: 'Mango',
+    name: 'MANGO',
     desc: 'Maldha',
     quantity :'1 kg',
     price : 'Rs 40'
@@ -22,7 +22,7 @@ const ProductListData =[
   },
   {
     id: 3,
-    name: 'Lichi',
+    name: 'LICHI',
     desc: 'Mujaffarpur',
     quantity :'1 kg',
     price : 'Rs 50'
